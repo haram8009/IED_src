@@ -11,30 +11,16 @@ void loop() {
   digitalWrite(PIN_LED, 1);
   delay(200);
 
-//1
-  digitalWrite(PIN_LED, 0);
-  delay(200);
-  digitalWrite(PIN_LED, 1);
-  delay(200);
-//2
-  digitalWrite(PIN_LED, 0);
-  delay(200);
-  digitalWrite(PIN_LED, 1);
-  delay(200);
-//3
-  digitalWrite(PIN_LED, 0);
-  delay(200);
-  digitalWrite(PIN_LED, 1);
-  delay(200);
-//4
-  digitalWrite(PIN_LED, 0);
-  delay(200);
-  digitalWrite(PIN_LED, 1);
-  delay(200);
-//5
-  digitalWrite(PIN_LED, 0);
-  delay(200);
-  digitalWrite(PIN_LED, 1);
+  int i = 0;
+  while (i < 5){
+    digitalWrite(PIN_LED, 0);
+    delay(200);
+    digitalWrite(PIN_LED, 1);
+    delay(200);
+
+    i ++;
+    }
+    
   
   while(1){ //infinite loop
   digitalWrite(PIN_LED, 1);
