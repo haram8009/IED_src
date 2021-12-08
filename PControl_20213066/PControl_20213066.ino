@@ -32,7 +32,7 @@
 #define _INTERVAL_SERIAL 100  // [20213058] 시리얼 제어 주기
 
 // PID parameters
-#define _KP 0.0   // [20213058]비례이득
+#define _KP 0.3   // [20213058]비례이득
 
 //////////////////////
 // global variables //
@@ -152,10 +152,10 @@ event_servo = false; // [20213078]
   
   } // [20213075]
   
-  
+  }  
   // update servo position
   myservo.writeMicroseconds(duty_curr); // [20213058]
-}
+
 
   if(event_serial) {
     event_serial = false; // [20213078]
